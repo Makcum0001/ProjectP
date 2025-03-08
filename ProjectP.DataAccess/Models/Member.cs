@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectP.DataAccess.Models
 {
-    public class Person
+    public class Member
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

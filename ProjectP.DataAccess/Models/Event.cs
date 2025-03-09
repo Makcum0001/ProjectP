@@ -1,13 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProjectP.DataAccess.Models
+﻿namespace ProjectP.DataAccess.Models
 {
-    public class Activity
+    public enum EventScope
     {
-        
+        Local,      
+        City,       
+        Federal
+    }
+
+    public class Event
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public DateTime Date { get; set; }
+        public TimeOnly Time { get; set; }
+        public EventScope Scope { get; set; } 
     }
 }

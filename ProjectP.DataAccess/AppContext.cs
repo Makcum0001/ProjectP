@@ -1,16 +1,12 @@
-﻿
-using Microsoft.EntityFrameworkCore;
-using System.Diagnostics.CodeAnalysis;
+﻿using Microsoft.EntityFrameworkCore;
+using ProjectP.DataAccess.Models;
 
 namespace ProjectP.DataAccess;
 
-
 public class AppContext(DbContextOptions<AppContext> options) : DbContext(options)
 {
-    public override DbSet<TEntity> Set<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors | DynamicallyAccessedMemberTypes.NonPublicConstructors | DynamicallyAccessedMemberTypes.PublicFields | DynamicallyAccessedMemberTypes.NonPublicFields | DynamicallyAccessedMemberTypes.PublicProperties | DynamicallyAccessedMemberTypes.NonPublicProperties | DynamicallyAccessedMemberTypes.Interfaces)] TEntity>()
-    {
-        return base.Set<TEntity>();
-    }
+    public DbSet<Event> Events { get; set; }
+    public DbSet<Member> Members { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -19,6 +15,8 @@ public class AppContext(DbContextOptions<AppContext> options) : DbContext(option
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Event>()
+            .HasKey(ev => ev.Id);
         base.OnModelCreating(modelBuilder);
     }
 }

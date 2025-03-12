@@ -1,19 +1,11 @@
-
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.OpenApi;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.OpenApi.Models;
+using ProjectP.DataAccess;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-
+builder.Services.AddDataAccess();
 builder.Services.AddEndpointsApiExplorer();
-
 
 var app = builder.Build();
 

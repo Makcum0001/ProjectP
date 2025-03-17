@@ -7,7 +7,7 @@
         Federal
     }
 
-    public class Event
+    public class MembersEvent
     {
         public int Id { get; set; }
         public string Name { get; set; }

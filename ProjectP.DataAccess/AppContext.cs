@@ -5,7 +5,7 @@ namespace ProjectP.DataAccess;
 
 public class AppContext(DbContextOptions<AppContext> options) : DbContext(options)
 {
-    public DbSet<Event> Events { get; set; }
+    public DbSet<MembersEvent> Events { get; set; }
     public DbSet<Member> Members { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -15,7 +15,7 @@ public class AppContext(DbContextOptions<AppContext> options) : DbContext(option
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Event>()
+        modelBuilder.Entity<MembersEvent>()
             .HasKey(ev => ev.Id);
         base.OnModelCreating(modelBuilder);
     }

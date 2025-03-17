@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectP.DataAccess", "ProjectP.DataAccess\ProjectP.DataAccess.csproj", "{3267086D-5C36-4D1D-AA36-58C74470344E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectP.API", "ProjectP.API\ProjectP.API.csproj", "{8C5068A9-6ED0-4758-B0D2-EF599F412D86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectP.Api", "ProjectP.API\ProjectP.Api.csproj", "{8C5068A9-6ED0-4758-B0D2-EF599F412D86}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectP.BussinessLogic", "ProjectP.BussinessLogic\ProjectP.BussinessLogic.csproj", "{87C9A5DA-7BB4-A302-1438-9EAFA3A35621}"
 EndProject

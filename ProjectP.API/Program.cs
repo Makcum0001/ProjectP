@@ -1,4 +1,4 @@
-using ProjectP.DataAccess;
+using ProjectP.DataAccess.Extensions;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);

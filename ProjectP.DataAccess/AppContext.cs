@@ -5,7 +5,7 @@ namespace ProjectP.DataAccess;
 
 public class AppContext(DbContextOptions<AppContext> options) : DbContext(options)
 {
-    public DbSet<MembersEvent> Events { get; set; }
+    public DbSet<MembersEvent> MembersEvents { get; set; }
     public DbSet<Member> Members { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

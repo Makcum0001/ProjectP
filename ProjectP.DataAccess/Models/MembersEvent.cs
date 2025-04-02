@@ -12,8 +12,9 @@
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public int RaitingValue { get; set; }
         public DateTime Date { get; set; }
         public TimeOnly Time { get; set; }
-        public EventScope Scope { get; set; } 
+        public EventScope Scope { get; set; }
     }
 }

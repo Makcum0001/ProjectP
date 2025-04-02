@@ -12,5 +12,6 @@
         public string TelegramProfileUrl { get; set; }
         public string EducationalInstitution { get; set; }
         public string Workplace { get; set; }
+        public int MyProperty { get; set; }
     }
 }
